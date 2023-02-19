@@ -1,0 +1,49 @@
+<%-include('partials/header')-%>
+
+<div class="form bank">
+  <form  action="/donationinfo"  method="post" enctype="multipart/form-data form-popup" >
+    <div class="row mb-3">
+    <label for="name" class="col-sm-4 col-form-label">Account number:</label>
+    <div class="col-sm-10">
+    <input type="text" id="name" class="form-control" name="accountnumber" />
+    </div>
+    </div>
+
+
+ <div class="row mb-3">
+    <label for="Quantity" class="col-sm-4 col-form-label">Ifsc code:</label>
+    <div class="col-sm-10">
+    <input type="text" id="latitude" class="form-control" name="ifsc" />
+    </div>
+    </div>
+ <div class="row mb-3">
+    <label for="Specifications" class="col-sm-4 col-form-label">Name:</label>
+    <div class="col-sm-10">
+    <input type="text" id="longitude" class="form-control" name="name" />
+    </div>
+    </div>
+ <div class="row mb-3">
+   <label for="description" class="col-sm-4 col-form-label">Gpay&others:</label>
+   <div class="col-sm-10">
+    <textarea name="other" class="form-control" rows="5" cols="5"></textarea>
+    </div>
+    </div>
+
+
+
+    <button type="submit" class="btn btn-outline-success" name="button" value="upload" >submit details</button>
+
+  </form>
+
+</div>
+<div class=" card shadow-sm bank">
+<h1><%=donation.accountnumber%></h1>
+<h3><%=donation.ifsc%></h3>
+<h3><%=donation.name%></h3>
+<h3><%=donation.others%></h3>
+
+
+</div>
+
+
+<%-include("partials/footer")-%>

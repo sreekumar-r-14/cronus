@@ -1,0 +1,46 @@
+<%-include('partials/header')-%>
+
+
+
+<%  items.forEach(function(item){ %>
+
+
+
+
+       <div class="card shadow-sm cardAll">
+         <div class="">
+
+
+         <img src="uploads/<%=item.itemimg.data%>" class=" cardimg" alt="">
+
+
+       </div>
+
+       <h1><%=item.name%></h1>
+       <h3>quantity:<%=item.quantity%></h3>
+       <h3><%=item.amount%></h3>
+
+       <a href="/marketBuying/<%=item.name%>">
+
+       <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+
+</a>
+
+     </div>
+
+
+
+
+
+
+
+
+   <% }) %>
+
+
+
+
+
+
+
+<%-include("partials/footer")-%>

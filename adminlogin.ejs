@@ -1,0 +1,45 @@
+<%-include('partials/header')-%>
+
+<main class="form-signin w-100 m-auto logins">
+
+
+
+
+          <!-- Makes POST request to /login route -->
+          <form action="/adminlogin" method="POST" >
+
+            <img class="mb-4" src="https://imgs.search.brave.com/rqR-qeLNPvxfigVjEe8ftl8TruXrJPNOCKPPrAY7tog/rs:fit:250:250:1/g:ce/aHR0cHM6Ly9jbGlw/Z3JvdW5kLmNvbS9p/bWFnZXMvYWRtaW4t/bG9nby0xLnBuZw" alt="" width="150" height="150">
+
+            <h1 class="h3 mb-3 fw-normal">LOGIN</h1>
+
+            <div class="form-floating">
+
+
+              <input type="text"  name="username" class="form-control" id="floatingInput">
+              <label for="floatingInput">username</label>
+
+           </div>
+
+           <div class="form-floating">
+
+
+              <input type="password"  name="password" class="form-control" id="floatingPassword">
+              <label for="floatingPassword">Password</label>
+
+              </div>
+
+
+
+
+
+
+
+
+
+            <button type="submit" class="w-100 btn btn-lg btn-primary">Login</button>
+
+
+
+
+
+<%-include("partials/footer")-%>

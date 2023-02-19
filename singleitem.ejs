@@ -1,0 +1,37 @@
+<%-include("partials/header.ejs")-%>
+
+
+
+<h1 class="singlehead"><%=foundsingle.name %></h1>
+
+
+<img src="../uploads/<%=foundsingle.itemimg.data%>" class="singleimg"  alt="img here">
+
+<div class="singledetails">
+  <h2 >quantity:<%=foundsingle.quantity%></h2>
+  <h2>specifications:<%=foundsingle.specifications%></h2>
+
+
+</div>
+
+<div class="singledetails1">
+  <h4 class="text-break"><%=foundsingle.description%></h4>
+</div>
+
+
+
+<div class="singleamount">
+  <h1><%=foundsingle.amount%></h1>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<%-include("partials/footer")-%>

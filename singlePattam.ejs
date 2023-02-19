@@ -1,0 +1,35 @@
+<%-include("partials/header.ejs")-%>
+
+
+
+
+<img src="../uploads/<%=foundsingle.pattamimg.data%>" class="singleimg"  alt="img here">
+<h1 class="singlehead"><%=foundsingle.name %></h1>
+<div class="singledetails">
+  <h2 >Latitude:<%=foundsingle.latitude%></h2>
+  <h2>Longitude:<%=foundsingle.longitude%></h2>
+
+
+</div>
+
+<div class="singledetails1">
+  <h4 class="text-break"><%=foundsingle.pattamdetails%></h4>
+</div>
+
+
+
+<div class="singleamount">
+  <h1><%=foundsingle.pattamamount%></h1>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<%-include("partials/footer")-%>

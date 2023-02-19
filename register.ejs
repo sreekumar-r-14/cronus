@@ -1,0 +1,71 @@
+<%-include('partials/header')-%>
+
+<main class="form-signin w-100 m-auto logins">
+
+
+
+
+
+         <!-- Makes POST request to /register route -->
+         <form action="/register" method="POST">
+
+           <img class="mb-4 logo" src="https://imgs.search.brave.com/g3ftEPl_fdewaygJACXVMrq9BCXEigfYAtCuVKPh2-M/rs:fit:516:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC56/UzVUVmFEeU1fQkxj/SWNhUDJRdE1RQUFB/QSZwaWQ9QXBp" alt="" width="150" height="150">
+
+           <h1 class="h3 mb-3 fw-normal">REGISTER</h1>
+           <div class="form-floating">
+
+
+             <input type="text"  name="username" class="form-control" id="floatingInput">
+             <label for="floatingInput">username</label>
+
+          </div>
+
+          <div class="form-floating">
+
+
+             <input type="date"  name="DOB" class="form-control" >
+             <label for="dob">DOB</label>
+
+             </div>
+
+             <div class="form-floating">
+
+
+                <input type="tel"  name="phone" class="form-control" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required >
+                <label for="phone">phone</label>
+
+                </div>
+
+
+
+
+          <div class="form-floating">
+
+
+             <input type="password"  name="password" class="form-control" id="floatingPassword" minlength="8" required>
+             <label for="floatingPassword">Password</label>
+
+             </div>
+
+
+
+
+
+               <fieldset class="yesno">
+
+                <label><input type="radio" name="radio" value="yes" /> Farmer</label>
+                <label><input type="radio" name="radio" value="no" /> User</label>
+              </fieldset>
+
+
+
+           <button type="submit" class="w-100 btn btn-lg btn-primary">Submit</button>
+
+
+
+         </form>
+
+
+</main>
+
+<%-include("partials/footer")-%>

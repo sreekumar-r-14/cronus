@@ -1,0 +1,98 @@
+<%-include('partials/header')-%>
+
+
+
+
+
+
+
+
+<div class="form logins">
+  <form  action="/marketSelling"  method="post" enctype="multipart/form-data" >
+    <div class="row mb-3">
+    <label for="name" class="col-sm-4 col-form-label">Item name:</label>
+    <div class="col-sm-10">
+    <input type="text" id="name" class="form-control" name="itemname" />
+    </div>
+    </div>
+
+
+ <div class="row mb-3">
+    <label for="Quantity" class="col-sm-4 col-form-label">Quantity:</label>
+    <div class="col-sm-10">
+    <input type="text" id="latitude" class="form-control" name="quantity" />
+    </div>
+    </div>
+ <div class="row mb-3">
+    <label for="Specifications" class="col-sm-4 col-form-label">Specifications:</label>
+    <div class="col-sm-10">
+    <input type="text" id="longitude" class="form-control" name="specifications" />
+    </div>
+    </div>
+ <div class="row mb-3">
+   <label for="description" class="col-sm-4 col-form-label">Description:</label>
+   <div class="col-sm-10">
+    <textarea name="description" class="form-control" rows="5" cols="5"></textarea>
+    </div>
+    </div>
+ <div class="row mb-3">
+    <label for="amount" class="col-sm-4 col-form-label">amount:</label>
+    <div class="col-sm-10">
+    <input type="text" name="amount" class="form-control" value="" />
+
+    </div>
+    </div>
+
+
+ <div class="col-sm-10">
+    <input type="file" class="form-control" name="itemimg" />
+    </div>
+
+
+
+
+
+    <button type="submit" class="btn btn-outline-success" name="button" value="upload" >submit details</button>
+
+  </form>
+
+</div>
+
+
+<%  items.forEach(function(item){ %>
+
+  <div class=" card shadow-sm cardAll">
+    <div class="">
+      <img src="uploads/<%=item.itemimg.data%>" class=" cardimg" alt="">
+    </div>
+    <h1><%=item.name%></h1>
+    <h3><%=item.quantity%></h3>
+    <h3><%=item.amount%></h3>
+
+    <a href="/marketSelling/<%=item.name%>">
+
+    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+
+ </a>
+
+</div>
+
+
+
+
+
+
+ <% }) %>
+
+
+
+
+
+
+
+
+
+
+
+
+<%-include("partials/footer")-%>

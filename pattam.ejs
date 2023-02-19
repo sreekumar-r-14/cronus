@@ -1,0 +1,92 @@
+<%-include('partials/header')-%>
+
+
+<div class="loc">
+  <a href="/location"><img src="https://imgs.search.brave.com/QxbffukmrCQR8jIwYWAG913FmxE9-7Q1Of4NGmncsdM/rs:fit:704:980:1/g:ce/aHR0cHM6Ly9jZG4u/b25saW5ld2ViZm9u/dHMuY29tL3N2Zy9p/bWdfMzAwNzgxLnBu/Zw" class="locationimg" alt="">Find my location</a>
+
+</div>
+
+<div class="form logins">
+  <form  action="/pattam"  method="post" enctype="multipart/form-data" >
+    <div class="row mb-3">
+    <label for="pattam name" class="col-sm-4 col-form-label">pattamname:</label>
+    <div class="col-sm-10">
+    <input type="text" id="pattamname" class="form-control" name="pattamname" />
+    </div>
+    </div>
+
+
+ <div class="row mb-3">
+    <label for="Latitude" class="col-sm-4 col-form-label">Latitude:</label>
+    <div class="col-sm-10">
+    <input type="text" id="latitude" class="form-control" name="latitude" />
+    </div>
+    </div>
+ <div class="row mb-3">
+    <label for="Longitude" class="col-sm-4 col-form-label">Longitude:</label>
+    <div class="col-sm-10">
+    <input type="text" id="longitude" class="form-control" name="longitude" />
+    </div>
+    </div>
+ <div class="row mb-3">
+   <label for="pattamdetails" class="col-sm-4 col-form-label">pattamdetails:</label>
+   <div class="col-sm-10">
+    <textarea name="pattamdetails" class="form-control" rows="5" cols="5"></textarea>
+    </div>
+    </div>
+ <div class="row mb-3">
+    <label for="pattamamount" class="col-sm-4 col-form-label">pattamamount:</label>
+    <div class="col-sm-10">
+    <input type="text" name="pattamamount" class="form-control" value="" />
+
+    </div>
+    </div>
+
+
+ <div class="col-sm-10">
+    <input type="file" class="form-control" name="pattamimg" />
+    </div>
+
+
+
+
+
+    <button type="submit" class="btn btn-outline-success" name="button" value="upload" >submit details</button>
+
+  </form>
+
+</div>
+
+
+
+ <%  pattams.forEach(function(pattam){ %>
+
+   <div class=" card shadow-sm cardAll">
+     <div class="">
+       <img src="uploads/<%=pattam.pattamimg.data%>" class=" cardimg" alt="">
+     </div>
+     <h1><%=pattam.name%></h1>
+     <h3><%=pattam.latitude%></h3>
+     <h3><%=pattam.longitude%></h3>
+
+     <a href="/pattams/<%=pattam.name%>">
+
+     <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+
+  </a>
+
+
+   </div>
+
+
+
+
+
+
+    <% }) %>
+
+
+
+
+
+<%-include("partials/footer")-%>

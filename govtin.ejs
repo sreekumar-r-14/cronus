@@ -1,0 +1,21 @@
+
+<%- include("partials/header"); -%>
+
+<div class="messagewhole">
+  <%  posts.forEach(function(post){ %>
+  <div class="postcard messages">
+    <h1><%=post.title%></h1>
+    <p>
+    <%=post.content.substring(0, 100) + " ..."%>
+    <a href="/govtin/<%=post._id%>">Read More</a>
+    </p>
+
+  </div>
+
+
+
+    <% }) %>
+    </div>
+
+
+<%- include("partials/footer"); -%>

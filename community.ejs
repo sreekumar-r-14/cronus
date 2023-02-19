@@ -1,0 +1,43 @@
+<%-include('partials/header')-%>
+
+<div class="messagewhole">
+
+  <%  messages.forEach(function(message){ %>
+    <div class="row-12 messages container">
+
+      <div class="col-12">
+        <p class="fw-light"><%=message.user%></p>
+
+        <h3><%=message.data%></h3>
+        <p class="fw-lighter"><%=message.time%></p>
+
+      </div>
+
+    </div>
+
+
+    <% }) %>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<form class="msg" action="/community" method="post">
+  <div class="input-group mb-3">
+    <textarea class="form-control" name="data"  id="exampleFormControlTextarea1" rows="2" cols="200"></textarea>
+    <button type="submit"  class="btn btn-primary btn-lg">➤</button>
+  </div>
+
+
+</form>
+
+
+<%-include("partials/footer")-%>

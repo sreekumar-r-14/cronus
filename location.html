@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+
+</head>
+<body style="text-align:center;">
+
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()" class="btn btn-outline-info">location</button>
+
+
+<h1 id="demo"><img src="https://imgs.search.brave.com/9lor2e1jr6lC3_I1vLknsVP6KTs1z8YSgHPxSYP3Zuo/rs:fit:800:600:1/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2Q3L2Fl/LzAxL2Q3YWUwMTcw/ZDNkNWZmY2JhYTdm/MDJmZGRhMzg3YTNi/LmdpZg.gif" class="bd-placeholder-img rounded-circle" width="320" height="320" alt="">
+</h1>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+</body>
+</html>

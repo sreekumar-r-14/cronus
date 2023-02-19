@@ -1,0 +1,16 @@
+
+<%- include("partials/header"); -%>
+    <div class="compose">
+      <form class="" action="/govt" method="post">
+        <div class="form-group">
+          <label class="col-sm-4 col-form-label txt">Title</label>
+          <input class="form-control" type="text" name="postTitle">
+          <label class="col-sm-4 col-form-label txt">Post</label>
+          <textarea class="form-control" name="postBody" rows="5" cols="30"></textarea>
+        </div>
+        <button class="btn btn-secondary btn-lg " type="submit" name="button">Publish</button>
+      </form>
+    </div>
+
+
+<%- include("partials/footer"); -%>

@@ -1,0 +1,46 @@
+<%-include('partials/header')-%>
+
+
+
+<%  pattams.forEach(function(pattam){ %>
+
+
+
+
+       <div class="card shadow-sm cardAll">
+         <div class="">
+
+
+         <img src="uploads/<%=pattam.pattamimg.data%>" class=" cardimg" alt="">
+
+
+       </div>
+
+       <h1><%=pattam.name%></h1>
+       <h3>Lat:<%=pattam.latitude%></h3>
+       <h3>Long:<%=pattam.longitude%></h3>
+
+       <a href="/pattams/<%=pattam.name%>">
+
+       <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+
+</a>
+
+     </div>
+
+
+
+
+
+
+
+
+   <% }) %>
+
+
+
+
+
+
+
+<%-include("partials/footer")-%>

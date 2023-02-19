@@ -1,0 +1,196 @@
+
+
+body {
+  display: flex;
+  align-items: center;
+padding: 80px;
+background-color: #026960;
+background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.yesno{
+  padding-bottom: 10px;
+}
+
+.cardimg{
+  width: 250px;
+  height: 150px;
+  padding: 1px;
+}
+
+.card{
+  padding: 20px;
+  background-color: #E5FDD1;
+  border: 2px solid black;
+}
+.singleimg{
+  width: 500px;
+  height: 400px;
+  position: relative;
+  right: 50px;
+}
+.singlehead{
+text-align: left;
+position: absolute;
+bottom: 100px;
+
+color: #A4BE7B;
+
+}
+.singledetails{
+  text-align: left;
+    line-height: 100px;
+    position: relative;
+    bottom: 180px;
+color: #A4BE7B;
+
+}
+
+.singledetails1{
+  padding-top: 40px;
+  text-align: left;
+    position: absolute;
+  bottom: 350px;
+  left: 620px;
+  color: #A4BE7B;
+  
+}
+
+.singleamount{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 300px;
+  border: 5px solid black;
+  color: #A4BE7B;
+}
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+.locationimg{
+  width: 50px;
+  height: 50px;
+}
+.loc{
+  position: fixed;
+  top: 70px;
+  right: 10px;
+  width: 300px;
+  border: 3px solid grey;
+  background-color: #A4BE7B;
+}
+
+.admbut{
+  position: fixed;
+  top:  60px;
+  right: 10px;
+  }
+.compose{
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  left: 100px;
+  top: 100px;
+}
+.postcard{
+  text-align: left;
+  padding: 5px;
+  border: 1px solid #A4BE7B;
+}
+.postcardmain{
+  border-radius: 20px;
+  background-color: #A4BE7B;
+  border: 1px solid black;
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  left: 100px;
+  top: 100px;
+}
+.logins{
+  background-color: #A4BE7B;
+  background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  border-radius: 30px;
+  padding: 30px;
+
+}
+.bank{
+  background-color: #377fd6;
+background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  border-radius: 20px;
+  padding: 30px;
+}
+.logo{
+border-radius: 180px;
+border: 4px solid #E5FDD1;
+}
+.msg{
+
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px;
+}
+.messages{
+  background-color: #FEFBE9;
+  text-align: left;
+  border-radius: 20px;
+
+}
+.modules{
+  padding-top: 150px;
+}
+.txt{
+  background-color: #A4BE7B;
+  border-radius: 50px;
+  padding: 10px;
+  border: 2px solid black;
+}
